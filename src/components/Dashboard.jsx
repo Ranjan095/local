@@ -44,9 +44,9 @@ const Dashboard = () => {
       )
       .then((res) => {
         setIsLoading(false);
-        createButton();
+        
         setPageSize(res?.data?.page_size);
-
+        createButton();
         setData(res?.data?.results);
         setNewData(res?.data?.results);
       })
